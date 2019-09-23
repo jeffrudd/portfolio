@@ -6,28 +6,31 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jeff Rudd - Developer Portfolio</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="wrapper">
-        <nav>
+    <header>
+        <nav class="wrapper">
             <div>
-                <a href="#"><span>Jeff</span> Rudd</a>
+                <a href="#"><span class="customUnderline customOverline">Jeff</span> Rudd</a>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#"><button>Home</button></a></li>
+                <li><a href="#"><button>About</button></a></li>
+                <li><a href="#"><button>Blog</button></a></li>
+                <li><a href="#"><button>Contact</button></a></li>
             </ul>
         </nav>
-        <div class="slashContainer">
-            <div class="slashText">
-                <h1>Jeff Rudd</h1>
-                <p>Front-end Developer</p>
+        <div class="slashContainer halfWrapper">
+            <div class="slashTextContainer">
+                <div class="slashTitle">
+                    <h1>Jeff Rudd</h1>
+                    <p>Front-end Developer</p>
+                </div>
                 <div>
-                    <button>Download CV</button>
-                    <button>Recent Works</button>
+                    <h2 class="customUnderline">About Me</h2>
+                    <p>I'm an ex-scientist, now focused on working with my hands in a new way. My goals now are to build amazing websites and learn something new everyday.</p>
                 </div>
             </div>
             <div class="slashPic">
@@ -36,35 +39,48 @@
         </div>
     </header>
 
+
     <main class="wrapper">
         <section class="projects">
             <div class="projectContainer">
                 <div class="projectShot">
                     <img src="./assets/ronShot.png" alt="Screenshot of Project">
                 </div>
-                <a href="https://github.com/lilSebastianIndustries/askRonSwanson"><button>Link to GitHub</button></a>
-                <a href="https://lilsebastianindustries.github.io/askRonSwanson/"><button>Live Link</button></a>
+                <div class="buttonContainer">
+                    <a href="https://github.com/lilSebastianIndustries/askRonSwanson"><button>Link to GitHub</button></a>
+                    <a href="https://lilsebastianindustries.github.io/askRonSwanson/"><button>Live Link</button></a>
+                </div>
+                <div class="projectTextContainer">
+                        <h2 class="customUnderline">Ask Ron Swanson</h2>
+                        <p>Are you looking for some advice? Star of TV's Parks and Recreaction, Ron Swanson, will offer you advice with anything. Literally anything from breakfast food to self-improvement</p>
+                </div>
             </div>
             <div class="projectContainer">
                 <div class="projectShot">
                     <img src="./assets/bingoShot.png" alt="Screenshot of Project">
                 </div>
-                <a href="https://github.com/jeffrudd/project3"><button>Link to GitHub</button></a>
-                <a href="https://jeffrudd.github.io/project3/"><button>Live Link</button></a>
+                <div class="buttonContainer">
+                    <a href="https://github.com/jeffrudd/project3"><button>Link to GitHub</button></a>
+                    <a href="https://jeffrudd.github.io/project3/"><button>Live Link</button></a>
+                </div>
             </div>
             <div class="projectContainer">
                 <div class="projectShot">
                     <img src="./assets/afewShot.png" alt="Screenshot of Project">
                 </div>
-                <a href="https://github.com/jeffrudd/aFewOfMyFavouriteThings"><button>Link to GitHub</button></a>
-                <a href="https://project5-9e891.web.app/"><button>Live Link</button></a>
+                <div class="buttonContainer">
+                    <a href="https://github.com/jeffrudd/aFewOfMyFavouriteThings"><button>Link to GitHub</button></a>
+                    <a href="https://project5-9e891.web.app/"><button>Live Link</button></a>
+                </div>
             </div>
             <div class="projectContainer">
                 <div class="projectShot">
                     <img src="./assets/concertShot.png" alt="Screenshot of Project">
                 </div>
-                <a href="https://github.com/concert-accountant/projectSixConcertAccountant"><button>Link to GitHub</button></a>
-                <a href="https://concertaccountant.web.app"><button>Live Link</button></a>
+                <div class="buttonContainer">
+                    <a href="https://github.com/concert-accountant/projectSixConcertAccountant"><button>Link to GitHub</button></a>
+                    <a href="https://concertaccountant.web.app"><button>Live Link</button></a>
+                </div>
             </div>
         </section>
         <section class="skills">
@@ -81,7 +97,7 @@
                 <div class="skillContainer"><img src="assets/firebase.png"></div>
             </div>
         </section>
-        <form action="http://www.focuspocus.io/magic/your-target@email.com" method="POST">
+        <form action="http://www.focuspocus.io/magic/jeffrudd19@gmail.com" method="POST">
             <legend>Contact Me</legend>
 
             <label for="name"></label>

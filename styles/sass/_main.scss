@@ -1,4 +1,8 @@
 // Page Styles
+* {
+    // border: 1px solid red;
+}
+
 html {
     font-family: 'Poppins', sans-serif;
 }
@@ -14,6 +18,11 @@ img {
 .wrapper {
     margin: 0 auto;
     max-width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 // Nav Styles
@@ -32,32 +41,116 @@ nav {
     display: flex;
 }
 
+nav span {
+    color: $primaryColor;
+}
+
+.customUnderline {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.customUnderline::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    height: 4px;
+    width: 50%;
+    left: 0%;
+    background-color: $primaryColor;
+}
+
+.customOverline::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 4px;
+    width: 50%;
+    right: -160%;
+    background-color: black;
+}
+
+button:hover,
+button:focus {
+    background: $primaryColor;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+button {
+    background: none;
+}
+
 
 //Splash styles
+
+header {
+    background: $backgroundColor;
+}
 
 .slashContainer {
     display: flex;
 }
 
+.halfWrapper {
+    margin-left: auto;
+    width: 90%;
+}
+
 .slashPic {
-    width: 50%;
+    width: 60%;
     clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.slashText {
-    width: 50%;
+.slashTextContainer {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.slashTitle h1 {
+    color: $primaryColor;
+    font-size: 3.5rem;
+}
+
+.slashTitle {
     align-self: center;
-    justify-content: center;
+}
+
+.slashText {
+    
 }
 
 //Project styles
 
 .projectShot {
-    width: 50%;
+    width: 40%;
+}
+
+.buttonContainer {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projectTextContainer {
+    width: 40%;
 }
 
 .projectContainer {
     display: flex;
+    justify-content: space-between;
 }
 
 //Skills styles

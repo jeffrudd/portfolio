@@ -196,6 +196,11 @@ img {
   max-width: 80%;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 nav div {
   width: 50%;
 }
@@ -216,36 +221,131 @@ nav {
   display: flex;
 }
 
+nav span {
+  color: #ffbb00;
+}
+
+.customUnderline {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.customUnderline::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  height: 4px;
+  width: 50%;
+  left: 0%;
+  background-color: #ffbb00;
+}
+
+.customOverline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 4px;
+  width: 50%;
+  right: -160%;
+  background-color: black;
+}
+
+button:hover,
+button:focus {
+  background: #ffbb00;
+}
+
+button:focus {
+  outline: 1px solid #fff;
+  outline-offset: -4px;
+}
+
+button:active {
+  -webkit-transform: scale(0.99);
+          transform: scale(0.99);
+}
+
+button {
+  background: none;
+}
+
+header {
+  background: whitesmoke;
+}
+
 .slashContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
+.halfWrapper {
+  margin-left: auto;
+  width: 90%;
+}
+
 .slashPic {
-  width: 50%;
+  width: 60%;
   -webkit-clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
 }
 
-.slashText {
-  width: 50%;
+.slashTextContainer {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.slashTitle h1 {
+  color: #ffbb00;
+  font-size: 3.5rem;
+}
+
+.slashTitle {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .projectShot {
-  width: 50%;
+  width: 40%;
+}
+
+.buttonContainer {
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.projectTextContainer {
+  width: 40%;
 }
 
 .projectContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .skillContainer {

@@ -1,0 +1,71 @@
+// Page Styles
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    width: 100%;
+}
+
+.wrapper {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+// Nav Styles
+
+nav div {
+    width: 50%
+}
+
+nav ul {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+}
+
+
+//Splash styles
+
+.slashContainer {
+    display: flex;
+}
+
+.slashPic {
+    width: 50%;
+    clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.slashText {
+    width: 50%;
+    align-self: center;
+    justify-content: center;
+}
+
+//Project styles
+
+.projectShot {
+    width: 50%;
+}
+
+.projectContainer {
+    display: flex;
+}
+
+//Skills styles
+
+.skillContainer {
+    width: 10%;
+}
+
+.skillsContainer1, .skillsContainer2 {
+    display: flex;
+}

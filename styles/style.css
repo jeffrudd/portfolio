@@ -203,6 +203,15 @@ a {
 
 nav div {
   width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav div a {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 nav ul {
@@ -346,6 +355,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 50px 0;
 }
 
 .skillContainer {
@@ -356,4 +366,44 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+form {
+  width: 60%;
+}
+
+.getInTouchContainer {
+  width: 20%;
+}
+
+input[type=textarea] {
+  width: 100%;
+}
+
+.nameEmailContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+fieldset::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 4px;
+  width: 50%;
+  right: 0;
+  background-color: black;
+}
+
+footer p {
+  margin-bottom: 0;
 }

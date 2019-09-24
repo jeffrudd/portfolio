@@ -28,7 +28,12 @@ a {
 // Nav Styles
 
 nav div {
-    width: 50%
+    width: 50%;
+    display: flex;
+}
+
+nav div a {
+    align-self: center;
 }
 
 nav ul {
@@ -151,6 +156,7 @@ header {
 .projectContainer {
     display: flex;
     justify-content: space-between;
+    margin: 50px 0;
 }
 
 //Skills styles
@@ -161,4 +167,42 @@ header {
 
 .skillsContainer1, .skillsContainer2 {
     display: flex;
+    justify-content: space-around
+}
+
+//Form styles
+
+form {
+    width: 60%;
+}
+
+.getInTouchContainer {
+    width: 20%;
+}
+
+input[type=textarea] {
+    width: 100%;
+}
+
+.nameEmailContainer {
+    display: flex;
+}
+
+.contact {
+    display: flex;
+}
+
+fieldset::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 4px;
+    width: 50%;
+    right: 0;
+    background-color: black;
+}
+
+//Footer styles
+footer p {
+    margin-bottom: 0;
 }

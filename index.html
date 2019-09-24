@@ -17,9 +17,9 @@
             </div>
             <ul>
                 <li><a href="#"><button>Home</button></a></li>
-                <li><a href="#"><button>About</button></a></li>
-                <li><a href="#"><button>Blog</button></a></li>
-                <li><a href="#"><button>Contact</button></a></li>
+                <li><a href="#projects"><button>Projects</button></a></li>
+                <li><a href="#skills"><button>Skills</button></a></li>
+                <li><a href="#contact"><button>Contact</button></a></li>
             </ul>
         </nav>
         <div class="slashContainer halfWrapper">
@@ -41,7 +41,8 @@
 
 
     <main class="wrapper">
-        <section class="projects">
+        <section class="projects" id="projects">
+            <h2 class="customUnderline">Projects</h2>
             <div class="projectContainer">
                 <div class="projectShot">
                     <img src="./assets/ronShot.png" alt="Screenshot of Project">
@@ -53,6 +54,7 @@
                 <div class="projectTextContainer">
                         <h2 class="customUnderline">Ask Ron Swanson</h2>
                         <p>Are you looking for some advice? Star of TV's Parks and Recreaction, Ron Swanson, will offer you advice with anything. Literally anything from breakfast food to self-improvement</p>
+                        <p>Made </p>
                 </div>
             </div>
             <div class="projectContainer">
@@ -63,6 +65,10 @@
                     <a href="https://github.com/jeffrudd/project3"><button>Link to GitHub</button></a>
                     <a href="https://jeffrudd.github.io/project3/"><button>Live Link</button></a>
                 </div>
+                <div class="projectTextContainer">
+                    <h2 class="customUnderline">Solo-Bingo™</h2>
+                    <p>Have you ever wished you had something fun to occupy your time while riding the TTC? With Solo-Bingo™ you can turn a mundane ride into excitement!</p>
+                </div>
             </div>
             <div class="projectContainer">
                 <div class="projectShot">
@@ -71,6 +77,10 @@
                 <div class="buttonContainer">
                     <a href="https://github.com/jeffrudd/aFewOfMyFavouriteThings"><button>Link to GitHub</button></a>
                     <a href="https://project5-9e891.web.app/"><button>Live Link</button></a>
+                </div>
+                <div class="projectTextContainer">
+                    <h2 class="customUnderline">A Few of My Favourite Things</h2>
+                    <p>What is your favourite movie? Having trouble remembering exactly which one it is? With this app you can store all your favourite items across 16 categories.</p>
                 </div>
             </div>
             <div class="projectContainer">
@@ -81,9 +91,16 @@
                     <a href="https://github.com/concert-accountant/projectSixConcertAccountant"><button>Link to GitHub</button></a>
                     <a href="https://concertaccountant.web.app"><button>Live Link</button></a>
                 </div>
+                <div class="projectTextContainer">
+                    <h2 class="customUnderline">Concert Accountant</h2>
+                    <p>It's easy to get carried away buying tickets to ALL the hot events. This app will make sure you come in under budget and still see all your favourite shows next season.</p>
+                </div>
             </div>
         </section>
-        <section class="skills">
+        <section class="skills" id="skills">
+            <div class="skillsTitle">
+                <h2 class="customUnderline">Critical Skills</h2>
+            </div>
             <div class="skillsContainer1">
                 <div class="skillContainer"><img src="assets/html.png"></div>
                 <div class="skillContainer"><img src="assets/css3.png"></div>
@@ -97,24 +114,27 @@
                 <div class="skillContainer"><img src="assets/firebase.png"></div>
             </div>
         </section>
-        <form action="http://www.focuspocus.io/magic/jeffrudd19@gmail.com" method="POST">
-            <legend>Contact Me</legend>
+        <section class="contact" id="contact">
+            <div class="getInTouchContainer">
+                <h2 class="customUnderline">Get in Touch</h2>
+                <p>jeffrudd19@gmail.com</p>
+            </div>
+            <fieldset class="customUnderline">
+                <form action="https://formspree.io/jeffrudd19@gmail.com" method="POST">
+                    <legend>Contact Me</legend>
+                    <div class="nameEmailContainer">
+                        <label for="name"></label>
+                        <input type="text" name="name" placeholder="Your Name" id="name">
 
-            <label for="name"></label>
-            <input type="" name="name" value="name" id="name">
-
-            <label for="email"></label>
-            <input type="email" name="email" value="email" id="email">
-
-            <label for="textarea"></label>
-            <input type="textarea" name="textarea" value="textarea" id="textarea">
-            <input type="submit" value="Submit">
-        </form>
-
-        <section class="quoteDisplay">
-
+                        <label for="email"></label>
+                        <input type="email" name="email" placeholder="Your Email" id="email">
+                    </div>
+                    <label for="textarea"></label>
+                    <input type="textarea" name="textarea" placeholder="Your Message" id="textarea">
+                    <input type="submit" value="Submit">          
+                </form>
+            </fieldset>
         </section>
-
     </main>
 
     <footer>

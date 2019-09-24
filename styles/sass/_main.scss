@@ -9,6 +9,8 @@ html {
 
 ul {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 img {
@@ -186,26 +188,44 @@ h1 {
 
 .skillContainer {
     width: 10%;
-    margin-top: 100px;
+}
+
+.skillsContainer1 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.skillsContainer2 {
+    padding-bottom: 100px;
 }
 
 .skillsContainer1, .skillsContainer2 {
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
+    background: $backgroundColor;
 }
 
 //Form styles
 
 form {
-    width: 60%;
+    width: 70%;
 }
 
 .getInTouchContainer {
     width: 20%;
 }
 
+.icons {
+    width:35%;
+}
+.icons ul {
+    display: flex;
+    font-size: 3rem;
+    justify-content: space-around;
+}
+
 input[type=textarea] {
-    width: 166.5%;
+    width: 143%;
 }
 
 .nameEmailContainer {
@@ -231,4 +251,15 @@ footer p {
     margin-bottom: 0;
     margin-top: 100px;
     text-align: center;
+}
+
+//Media Queries
+@media (max-width: 1000px) {
+    // .wrapper {
+    //     width: 100%;
+    // }
+
+    // .halfWrapper {
+    //     width: 100%;
+    // }
 }

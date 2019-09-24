@@ -13,6 +13,9 @@
 </head>
 <body>
     <header>
+        <div>
+            <p class="hamburger show linkage"><i class="fas fa-bars"></i></p>
+        </div>
         <nav class="wrapper">
             <div>
                 <a href="#"><span class="customUnderline customOverline">Jeff</span> Rudd</a>
@@ -22,11 +25,12 @@
                 <li><a href="#projects"><button>Projects</button></a></li>
                 <li><a href="#skills"><button>Skills</button></a></li>
                 <li><a href="#contact"><button>Contact</button></a></li>
+                <li class="exitResponsive linkage"><i class="fas fa-times"></i></li>
             </ul>
         </nav>
         <div class="slashContainer halfWrapper">
             <div class="slashTextContainer">
-                <div class="slashTitle animated slideInLeft">
+                <div class="slashTitle">
                     <h1>Jeff Rudd</h1>
                     <p>Front-end Developer</p>
                     <a href="assets/jeff-rudd-resume.pdf" download target="_blank"><button>Download CV</button></a>
@@ -36,7 +40,7 @@
                     <p>I'm an ex-scientist, focused on working with my hands in a new way. My goals now are to build amazing websites and learn something new about coding everyday.</p>
                 </div>
             </div>
-            <div class="slashPic slideInRight">
+            <div class="slashPic animated slideInRight">
                 <img src="./assets/2019-Summer-Jeff-Rudd-Juno-1.jpg">
             </div>
         </div>
@@ -57,7 +61,7 @@
                 <div class="projectTextContainer">
                         <h2 class="customUnderline">Ask Ron Swanson</h2>
                         <p>Are you looking for some advice? Star of TV's Parks and Recreaction, Ron Swanson, will offer you advice about anything. Literally anything from breakfast food to self-improvement</p>
-                        <p>Pair programming project with <a href="www.alexandralim.dev" class="linkage" target="_blank">Alex Lim</a>.</p>
+                        <p>Pair programming project with <a href="https://www.alexandralim.dev" class="linkage" target="_blank">Alex Lim</a>.</p>
                 </div>
             </div>
             <div class="projectContainer customUnderline">
@@ -97,7 +101,7 @@
                 <div class="projectTextContainer">
                     <h2 class="customUnderline">Concert Accountant</h2>
                     <p>It's easy to get carried away buying tickets to ALL the hot events. This app will make sure you come in under budget and still see all your favourite shows next season.</p>
-                    <p>Collaboration project with <a href="www.pritikaroy.com" class="linkage" target="_blank">Pritika Roy</a>, Alexa Woloszuk, and Matt Donaldson.</p>
+                    <p>Collaboration project with <a href="https://www.pritikaroy.com" class="linkage" target="_blank">Pritika Roy</a>, <a href="https://www.alexawolo.com" class="linkage" target="_blank">Alexa Woloszuk</a> , and <a href="https://www.mattcodes.com" class="linkage" target="_blank">Matt Donaldson</a>.</p>
                 </div>
             </div>
         </section>
@@ -156,6 +160,28 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 
     <script src="scripts/scripts.js"></script>
+
+    <script>
+    // write a document ready
+		$(function(){
+		// write a function that listens to a click on the hamburger menu
+			$('.hamburger').click(function(){
+			// toggle class show on the menu
+				$("nav").toggleClass('show');
+                $(".hamburger").toggleClass('show');
+                $(".exitResponsive").toggleClass('show');
+			})
+			$('.exitResponsive').click(function(){
+				$("nav").toggleClass('show');
+                $(".hamburger").toggleClass('show');
+                $(".exitResponsive").toggleClass('show');
+			})
+		
+		// write a function that listens to a click on the exit icon
+		// toggle class show on the menu
+		});
+		
+    </script>
 
 </body>
 </html>

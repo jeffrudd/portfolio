@@ -31,7 +31,43 @@ section {
     margin-top: 150px;
 }
 
+body {
+    position: relative;
+}
+
 // Nav Styles
+
+nav {
+    display: none;
+}
+
+.exitResponsive,
+.hamburger {
+    display: none;
+    font-size: 3rem;
+
+}
+
+.show {
+	display: flex;
+}
+
+.hamburger {
+    margin: 0;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    z-index: 10;
+    background: $backgroundColor;
+    border-radius: 25%;
+    padding: 10px;
+}
+
+.exitResponsive {
+    background: $backgroundColor;
+    border-radius: 25%;
+    padding: 10px;
+}
 
 nav div {
     width: 50%;
@@ -46,10 +82,6 @@ nav ul {
     width: 50%;
     display: flex;
     justify-content: space-between;
-}
-
-nav {
-    display: flex;
 }
 
 nav span {
@@ -180,7 +212,9 @@ h1 {
     margin: 150px 0;
 }
 
-.linkage:hover {
+.linkage:hover,
+.linkage:active,
+.linkage:focus {
     color: $primaryColor;
 }
 
@@ -206,6 +240,11 @@ h1 {
 }
 
 //Form styles
+
+.contact {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 form {
     width: 70%;

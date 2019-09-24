@@ -82,6 +82,7 @@ nav ul {
     width: 50%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 nav span {
@@ -181,11 +182,11 @@ h1 {
 //Project styles
 
 .projectShot {
-    width: 40%;
+    width: 60%;
 }
 
 .buttonContainer {
-    width: 20%;
+    width: 15%;
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-around;
@@ -193,7 +194,13 @@ h1 {
 }
 
 .projectTextContainer {
-    width: 40%;
+    width: 33%;
+}
+
+.projectShotButtonContainer {
+    display:flex;
+    justify-content: space-around;
+    width: 66%
 }
 
 .projectContainer::before {
@@ -293,12 +300,99 @@ footer p {
 }
 
 //Media Queries
-@media (max-width: 1000px) {
-    // .wrapper {
+@media (max-width: 1400px) {
+    .projectShotButtonContainer {
+        flex-direction: column;
+        width: 45%
+    }
+    .projectTextContainer {
+        width: 45%;
+    }
+
+    .buttonContainer {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .projectShot {
+        width: 100%;
+    }
+}
+
+@media (max-width: 900px) {
+    .wrapper {
+        width: 95%;
+    }
+
+    .halfWrapper {
+        width: 95%;
+    }
+
+    nav div {
+        width: 25%;
+    }
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 0.7rem;
+    }
+
+    section {
+        margin-top: 50px;
+    }
+
+    .projectContainer {
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 440px) {
+    // html {
+    //     font-size: 0.6rem;
+    // }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .slashTextContainer {
+        width: 30%;
+    }
+
+    .slashPic {
+        width: 70%;
+    }
+}
+
+@media (max-width: 425px) {
+    // .slashTextContainer {
+    //     flex-direction: row;
     //     width: 100%;
     // }
 
-    // .halfWrapper {
+    // .slashContainer {
+    //     flex-direction: column;
+    // }
+
+    // .slashPic {
     //     width: 100%;
+    //     clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+    // }
+    // .slashTextContainer {
+    //     position: absolute;
+    //     top: 50px;
+    //     left: 10px;
+    //     z-index: 100;
+    // }
+
+    // .slashPic {
+    //     z-index: -10;
     // }
 }

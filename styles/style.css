@@ -211,6 +211,10 @@ body {
   position: relative;
 }
 
+p {
+  line-height: 30px;
+}
+
 nav {
   display: none;
 }
@@ -334,10 +338,14 @@ header {
   width: 90%;
 }
 
-.slashPic {
+.desktopPic {
   width: 60%;
   -webkit-clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(40% 0, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.mobilePic {
+  display: none;
 }
 
 .slashTextContainer {
@@ -387,6 +395,7 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  line-height: 40px;
 }
 
 .projectTextContainer {
@@ -429,7 +438,23 @@ h1 {
 }
 
 .skillContainer {
-  width: 10%;
+  width: 100%;
+}
+
+.figureSkillContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .skillsContainer1 {
@@ -535,9 +560,18 @@ footer p {
   }
 }
 
+@media (max-width: 1050px) {
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 @media (max-width: 900px) {
   .wrapper {
-    width: 95%;
+    width: 99%;
   }
   .halfWrapper {
     width: 95%;
@@ -553,7 +587,7 @@ footer p {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
   html {
     font-size: 0.7rem;
   }
@@ -562,6 +596,9 @@ footer p {
   }
   .projectContainer {
     margin: 50px 0;
+  }
+  p {
+    line-height: 20px;
   }
 }
 
@@ -574,5 +611,54 @@ footer p {
   }
   .slashPic {
     width: 70%;
+  }
+}
+
+@media (max-width: 425px) {
+  .slashTextContainer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 100%;
+  }
+  .slashTitle {
+    width: 50%;
+    text-align: center;
+  }
+  .slashContainer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .aboutMe {
+    width: 50%;
+  }
+  .desktopPic {
+    display: none;
+  }
+  .mobilePic {
+    display: block;
+  }
+  .hamburger {
+    top: 5px;
+    right: 5px;
+    position: fixed;
+  }
+  nav {
+    position: fixed;
+    z-index: 100;
+    background: whitesmoke;
+    width: 100%;
+  }
+  nav ul {
+    width: 100%;
+  }
+  .aboutMe {
+    margin-top: 40px;
+  }
+  nav div {
+    display: none;
   }
 }

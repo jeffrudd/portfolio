@@ -484,35 +484,70 @@ h1 {
           justify-content: space-evenly;
 }
 
+.contact h2 {
+  margin-top: 0;
+}
+
 form {
-  width: 70%;
+  width: 100%;
+  max-width: 400px;
+}
+
+.contactPic {
+  max-width: 250px;
 }
 
 .getInTouchContainer {
-  width: 20%;
+  width: 50%;
 }
 
 .icons {
-  width: 35%;
+  width: 50%;
+}
+
+.contactAndIconsContainer {
+  width: 55%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .icons ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-size: 3rem;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-input[type=textarea] {
-  width: 143%;
+textarea {
+  width: 100%;
+  border: 1px solid white;
+  resize: none;
 }
 
-.nameEmailContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+input[type=text],
+input[type=email] {
+  border: 1px solid white;
+  width: 100%;
+}
+
+fieldset {
+  position: relative;
+}
+
+input[type=submit] {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
 }
 
 .contact {
@@ -566,6 +601,9 @@ footer p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .contactAndIconsContainer {
+    width: 100%;
   }
 }
 

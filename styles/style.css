@@ -323,6 +323,10 @@ button {
   background: none;
 }
 
+.slashTitle p {
+  font-size: 1.2rem;
+}
+
 header {
   background: whitesmoke;
 }
@@ -559,6 +563,7 @@ input[type=submit] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 50px;
 }
 
 fieldset::before {
@@ -569,6 +574,15 @@ fieldset::before {
   width: 50%;
   right: 0;
   background-color: black;
+}
+
+legend {
+  line-height: 50px;
+  font-size: 1.2rem;
+}
+
+input[type=submit]:hover {
+  background: #ffbb00;
 }
 
 footer p {

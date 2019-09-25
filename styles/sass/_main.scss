@@ -188,6 +188,10 @@ h1 {
 
 //Project styles
 
+.projectBackground {
+    background: $backgroundColor;
+}
+
 .projectShot {
     width: 60%;
 }
@@ -287,6 +291,7 @@ form {
 
 .icons {
     width:50%;
+    margin-top: 75px;
 }
 
 .contactAndIconsContainer {
@@ -382,7 +387,7 @@ footer p {
 
 @media (max-width: 900px) {
     .wrapper {
-        width: 99%;
+        width: 98%;
     }
 
     .halfWrapper {
@@ -434,6 +439,18 @@ footer p {
 
     .slashPic {
         width: 70%;
+    }
+
+    .projectContainer {
+        flex-direction: column;
+    }
+
+    .projectShotButtonContainer {
+        width: 100%
+    }
+
+    .projectTextContainer {
+        width: 100%;
     }
 
 }
